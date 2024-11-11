@@ -188,7 +188,6 @@ html{
 .imgs_completas{
     width: 900px;
     height: auto;
-    margin-left: 30px;
     align-items: center;
 }
 
@@ -207,6 +206,48 @@ html{
     margin-bottom: 60px;
 }
 
+#img_noticia1_1{
+    width: 900px;
+    height: auto;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#img_noticia2_1{
+    width: 500px;
+    height: auto;
+    margin-left: 300px;
+    align-content: center;
+}
+
+#img_noticia2_2 {
+    width: 700px;
+    height: auto;
+    margin-left: 200px;
+    align-content: center;
+}
+
+#img_noticia2_3{
+    width: 700px;
+    height: auto;
+    margin-left: 200px;
+    align-content: center;
+}
+
+#img_noticia3_1{
+    width: 700px;
+    height: auto;
+    margin-left: 200px;
+    align-content: center;
+}
+
+#img_noticia3_2{
+    width: 700px;
+    height: auto;
+    margin-left: 200px;
+    align-content: center;
+}
+
 #lista{
     text-align: justify;
     margin-left: 30px;
@@ -223,4 +264,47 @@ html{
     -webkit-text-fill-color: white;
     text-align: center;
     font-size: medium;
+}
+
+.formulario > *{
+    width: auto;
+    margin-left: 200px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#contact-form button {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
 }
