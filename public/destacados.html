@@ -5,9 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="stylesheet" type="text/css" href="../styles/style.css">
-             
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">   
     </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const main = document.getElementById("main");
+            const noticias = main.querySelectorAll(".noticias");
+            
+            // Añadimos un pequeño delay a cada hijo
+            noticias.forEach((noticia, index) => {
+                setTimeout(() => {
+                    noticia.classList.add("visible");
+                }, index * 200); // Escalonar la animación
+            });
+        });
+    </script>
 
     <body>
         <div id="grid-container" class="fixed">
