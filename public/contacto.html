@@ -6,8 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
-             
     </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const main = document.getElementById("main_noticia_completa");
+            const children = main.querySelectorAll("*");
+            
+            // Añadimos un pequeño delay a cada hijo
+            children.forEach((child, index) => {
+                setTimeout(() => {
+                    child.classList.add("visible");
+                }, index * 200); // Escalonar la animación
+            });
+        });
+    </script>
 
     <body>
         <div id="grid-container" class="fixed">
