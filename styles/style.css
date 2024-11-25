@@ -110,6 +110,18 @@ html{
   padding: 10px;
 }
 
+#main .noticias {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+#main .noticias.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
 #main > * {
   background-color: rgba(255, 255, 255);
   text-align: center;
@@ -121,6 +133,18 @@ html{
 
     padding: 10px;
 }
+
+#main_noticia_completa * {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+#main_noticia_completa *.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
   
 #main_noticia_completa > * {
     background-color: rgba(255, 255, 255);
